@@ -1,0 +1,113 @@
+body .slick-slide{
+    width: 268px;
+}
+#my-slider .slick-slide {
+    width: 268px;
+  }
+  .slick-initialized .slick-slide {
+    display: inline-block; /* Встановіть бажане значення для display */
+    width: 300px; /* Встановіть бажану ширину */
+  }
+  .slick-initialized .slick-slide {
+    display: inline-block !important;
+    width: 300px !important;
+    background: none;
+  }
+  .my-slider .slick-initialized .slick-slide {
+    display: inline-block;
+    width: 300px;
+  }
+  .box_select_firma:hover{
+    border-radius: 8px;
+    transition: box-shadow 0.4s ease-in-out;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+.box_select_firma{
+    border-radius: 8px;
+}
+.slick-track {
+    margin-bottom: 30px;
+}
+.brand_img{
+    border-radius: 8px;
+}
+
+.slick-track {
+  width: 100%; /* Встановіть відповідну ширину, наприклад, 100% */
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+.popular_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider1 {
+  max-width: 80%; /* Задайте максимальну ширину, яка вам підходить */
+  width: 100%;
+}
+
+/* Додатковий стиль для центрування стрілок, якщо потрібно */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Додатковий стиль для центрування крапок, якщо потрібно */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%; /* Змініть ширину відповідно до вашого дизайну */
+}
+
+.custom-prev-button,
+.custom-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff; /* Змініть колір фону на свій смак */
+  padding: 10px;
+  border: 1px solid #000; /* Змініть стиль рамки на свій смак */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-prev-button {
+  left: -50px; /* Змініть відстань зліва від слайдера на свій смак */
+}
+
+.custom-next-button {
+  right: -50px; /* Змініть відстань справа від слайдера на свій смак */
+}
+.custom-prev-button, .custom-next-button {
+  position: static !important;
+}
+.slider-container{
+  margin: 50px !important;
+}  
+.img_arrow, .custom-prev-button, .custom-next-button{
+  width: 50px;
+  height: 50px;
+  border: none !important;
+  background: none;
+}
+.arrow_prew{
+  transform: translateY(-50%) rotate(-90deg);
+}
+.arrow_next{
+  transform: translateY(-50%) rotate(90deg);
+}
+.custom-prev-button, .custom-next-button{
+  border: none !important;
+  background: none;
+}
