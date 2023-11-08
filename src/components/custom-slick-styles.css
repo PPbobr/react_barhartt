@@ -37,6 +37,7 @@ body .slick-slide{
 }
 .slick-slider .slick-track, .slick-slider .slick-list {
   transform: translate3d(0, 0, 0);
+  display: flex;
 }
 .popular_cont {
   display: flex;
@@ -110,4 +111,32 @@ body .slick-slide{
 .custom-prev-button, .custom-next-button{
   border: none !important;
   background: none;
+}
+.slick-slider {
+  display: flex;
+}
+@media (max-width: 550px) {
+  .slick-slider {
+    display: block;
+  }
+  .slick-slide {
+    display: block !important;
+  }
+  .slider-container{
+    margin: 1px !important;
+  }
+  .slick-initialized{
+    margin: 10px;
+  }
+  .box_select_firma, .slick-slide{
+    width: 286px !important;
+  }
+  .slick-initialized:hover .slick-slide:hover {
+    display: inline-block !important;
+    width: 286px !important;
+    background: none;
+  }
+  .img_arrow, .custom-next-button, .custom-prev-button {
+    display: none;
+  }
 }

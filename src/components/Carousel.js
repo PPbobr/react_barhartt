@@ -9,15 +9,15 @@ class Carousel extends React.Component {
     render() {
         const settings = {
             infinite: true,
-            slidesToShow: 2, // Відображати 3 слайди
+            slidesToShow: 2,
             slidesToScroll: 1,
             speed: 500,
             dots: false,
             arrows: false,
-            autoplay: true, // Автоматичне прокручування
-            autoplaySpeed: 6000, // Інтервал часу у мілісекундах (6 секунд)
-            centerMode: true, // Включити центральний режим
-            centerPadding: 0, // Встановіть відступ центру, за необхідності
+            autoplay: true,
+            autoplaySpeed: 6000,
+            centerMode: true,
+            centerPadding: 0,
         };
 
         const sliderStyle = {
@@ -98,10 +98,10 @@ class Carousel extends React.Component {
                         </div>
                     ))}
                 </Slider>
-                <button style={customPrevButton} onClick={() => this.slider.slickPrev()}>
+                <button style={customPrevButton} onClick={() => this.slider.slickPrev()} className="img_arrow">
                     <img src='./img/arrow-removebg-preview.png' alt="Prev" style={customButtonIconStyle} />
                 </button>
-                <button style={customNextButton} onClick={() => this.slider.slickNext()}>
+                <button style={customNextButton} onClick={() => this.slider.slickNext()} className="img_arrow">
                     <img src='./img/arrow-removebg-preview.png' alt="Next" style={customButtonIconStyle} />
                 </button>
             </div>

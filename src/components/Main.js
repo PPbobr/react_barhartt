@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 class Main extends Component {
@@ -75,13 +76,16 @@ class Main extends Component {
             const divClass = `div-${index + 1}`;
 
             return (
-                <div key={el.id} className={`item ${divClass}`}>
-                    <img className='item_img' src={el.img} alt="фото товару" />
-                    <div className='kross_box'>
-                        <h1 className='name_kross'>{el.title}</h1>
-                        <h1 className='price_kross'>{el.price}</h1>
+                    <div className={`item ${divClass}`}>
+                        <Link to={`/product/${el.id}`} key={el.id}>
+                        <img className='item_img' src={el.img} alt="фото товару" />
+                        <div className='kross_box'>
+                            <h1 className='name_kross'>{el.title}</h1>
+                            <h1 className='price_kross'>{el.price}</h1>
+                        </div>
+                        </Link>
                     </div>
-                </div>
+
             );
         });
 

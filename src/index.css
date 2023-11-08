@@ -332,6 +332,7 @@ section{
   background: #f9f9f9;
   width: 420px;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 .return-title{
   text-align: center;
@@ -528,7 +529,7 @@ a{
 .boxir{
   width: 500px;
   text-align: center;
-  border: 0.5px solid gray;
+  border: 0.5px solid grey;
   border-top: 3px solid rgb(0, 0, 0);
   align-self: center;
   height: 220px;
@@ -935,7 +936,7 @@ button{
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-image: url(https://static1.s123-cdn-static-a.com/uploads/6954727/2000_641fdd080ea34.jpg);
-  background-size: 324px;
+  background-size: 360px;
 }
 .div-55:after{
   content: '';
@@ -1117,6 +1118,15 @@ button{
   .main_new{
     width: 100%;
   }
+  .item_img {
+    width: 250px;
+    height: 52px;
+    background-position: center center;
+    object-fit: cover;
+    transition: 0.9s;
+    border-radius: 8px 8px 0px 0px;
+    background-repeat: no-repeat;
+  }
   .item{
     background: white;
     width: 250px;
@@ -1127,7 +1137,7 @@ button{
   }
   .item:hover{
     width: 250px;
-    height: 320px;
+    height: 270px;
     margin: 10px;
     border-radius: 8px;
     transition: box-shadow 0.4s ease-in-out;
@@ -1170,6 +1180,27 @@ button{
   .popular_kross:hover{
     display: none;
   }
+  .div-1:hover:after{
+    display: none;
+  }
+  .div-2:hover:after{
+    display: none;
+  }
+  .div-3:hover:after{
+    display: none;
+  }
+  .div-4:hover:after{
+     display: none;
+   }
+  .div-5:hover:after{
+    display: none;
+  }
+  .div-6:hover:after{
+    display: none;
+  }
+  .div-7:hover:after{
+    display: none;
+  }
   .div-8:hover:after{
     display: none;
   }
@@ -1188,20 +1219,20 @@ button{
   .div-12:hover:after{
     display: none;
   }
-  .div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8, .div-9{
+  .div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8, .div-9, .div-10{
     width: 250px;
-    height: 140px;
+    height: 270px;
     background-position: center center;
     position: relative;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
   }
-  .main_img{
+  .item_img{
     width: 250px;
     height: 140px;
   }
-  .div-10, .div-55, .div-11, .div-12, .div-13{
+  .div-55, .div-11, .div-12, .div-13{
     width: 250px;
     height: 140px;
     position: relative;
@@ -1472,7 +1503,7 @@ button{
     transition: box-shadow 0.4s ease-in-out;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
   }
-  .main_img{
+  .item_img{
     width: 100%;
     height: 140px;
   }
@@ -1501,6 +1532,9 @@ button{
   .price_kross{
     font-size: 20px;
     font-weight: bold;
+  }
+  .popular_cont{
+
   }
   .slider__item{
     padding: 0;
@@ -1606,8 +1640,8 @@ button{
     height: auto;
   }
   .main_imgg{
-    height: auto;
-    margin: 0;
+    height: 120px;
+    margin-bottom: -10px;
     padding: 0;
     width: 100%;
   }
@@ -1632,15 +1666,15 @@ button{
     width: 100%;
   }
   .div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8, .div-9{
-    width: 100%;
-    height: 140px;
+    width: 40%;
+    height: 200px;
     background-position: center center;
     position: relative;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
   }
-  .main_img{
+  .item_img{
     width: 100%;
     height: 110px;
   }
@@ -1664,11 +1698,11 @@ button{
     object-fit:cover;
     background-color: rgba(0,0,0, 0.5);
   }
-  .kross_box{
+  .kross_box {
     height: 80px;
     margin: 0 auto;
     width: 90%;
-    padding: 0;
+    padding: 0px;
     margin-left: 10px;
   }
   .kross_box_a{

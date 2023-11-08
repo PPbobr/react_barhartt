@@ -11,7 +11,6 @@ const Header = () => {
     };
 
     useEffect(() => {
-        // Додаємо чи видаляємо класи для кореневих елементів на основі isDarkTheme
         const elementsToToggleClass = [
             'container',
             'StickyHeader',
@@ -28,11 +27,11 @@ const Header = () => {
         elementsToToggleClass.forEach((element) => {
             const el = document.querySelector(`.${element}`);
             if (el) {
-                el.classList.remove('dark-theme', 'light-theme'); // Видаляємо всі класи теми
+                el.classList.remove('dark-theme', 'light-theme');
                 if (isDarkTheme) {
-                    el.classList.add('dark-theme'); // Додаємо клас dark-theme, якщо тема темна
+                    el.classList.add('dark-theme');
                 } else {
-                    el.classList.add('light-theme'); // Додаємо клас light-theme, якщо тема світла
+                    el.classList.add('light-theme');
                 }
             }
         });
@@ -53,13 +52,13 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/Main' className={location.pathname === '/Main' ? 'active' : ''}>
-                                Main
+                            <Link to='/catalog' className={location.pathname === '/catalog' ? 'active' : ''}>
+                                Каталог
                             </Link>
                         </li>
                         <li>
-                            <Link to='/' className={location.pathname === '/Main' ? 'active' : ''}>
-                                Main
+                            <Link to='#Carousel' className={location.pathname === '#Carousel' ? 'active' : ''}>
+                                Каталог
                             </Link>
                         </li>
                         <button className='theme-button11' type='button' onClick={toggleTheme}>
@@ -71,7 +70,7 @@ const Header = () => {
                     <Link to='/' className='header_a1'>
                         головна сторінка
                     </Link>
-                    <Link to='/Main' className='header_a2'>
+                    <Link to='/catalog' className='header_a2'>
                         каталог
                     </Link>
                     <div className='header_logo'>
@@ -80,7 +79,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className='header_text2'>
-                        <a href='#kroos_yak' className='header_a3'>
+                        <a href='#kross_brand_anchor' className='header_a3'>
                             more
                         </a>
                     </div>
